@@ -200,6 +200,14 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.lirePost {
+  background-color: lightgreen;
+}
+
+.active {
+  background-color: red;
+}
+
 .divConference {
   background-color: white !important;
 }
