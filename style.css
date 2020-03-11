@@ -409,13 +409,16 @@ h1 p {
 
 .septembre {
   background-color: #ff6767;
+  height: auto;
 }
 
 .octobre {
   background-color: #67ffb8;
+  height: auto;
 }
 
 .novembre {
   background-color: #67d4ff;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

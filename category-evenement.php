@@ -41,6 +41,7 @@ do_action( 'astral_top_banner' );
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
                     echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
+                    echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
                     echo "</div>";
                     break;
 
@@ -50,6 +51,7 @@ do_action( 'astral_top_banner' );
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
                     echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
+                    echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
                     echo "</div>";
                     break;
                     
@@ -60,6 +62,7 @@ do_action( 'astral_top_banner' );
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
                     echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
+                    echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
                     echo "</div>";
                     break;
                     }
