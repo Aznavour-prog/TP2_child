@@ -39,7 +39,10 @@ get_header();
   */
  wp_reset_postdata();
  $args2 = array(
-    "category_name"=>"conferences");
+    "category_name"=>"evenement",
+    "order"=>"ASC",
+    "posts_per_page"=>3,
+    "orderby"=>"date");
 
  /*The 2nd Query (without global var) */
  $query2 = new WP_Query( $args2 );
@@ -63,7 +66,10 @@ echo "<h1>".category_description($category[0])."</h1>";
 
 
  $args = array(
-    "category_name"=>"nouvelle");
+    "category_name"=>"nouvelle",
+    "order"=>"DESC",
+    "posts_per_page"=>3,
+    "orderby"=>"date");
 // The Query
 
 
@@ -84,6 +90,15 @@ echo "<h6>".category_description($category[0])."</h6>";
    }
    echo '</div>';
 
+
+   echo '<div class="animation1"><p>Ceci est le premier élément animée</p></div>';
+
+   echo '<div class="animation2"><p>Ceci est un deuxième élément animée</p></div>';
+
+   echo '<div class="experience" id="experience1">
+   <div class="rectangle1"></div>
+  
+   <div><h3>Ceci est un troisième élément animée</h3></div><div class="rectangle2"></div></div>';
  ?>
 
  
