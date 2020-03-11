@@ -55,7 +55,7 @@ echo "<h1>".category_description($category[0])."</h1>";
  while ( $query2->have_posts() ) {
      $query2->the_post();
      echo '<div class="divConference" style="background-color:white; padding:1%;">';
-     echo '<h4>' . get_the_title() . ' - ' . get_the_date() . '</h4>';
+     echo '<h4><a href='.get_the_permalink().'>' . get_the_title() . ' - ' . get_the_date() . '</a></h4>';
      echo get_the_post_thumbnail(null,"thumbnail");
      echo  the_excerpt();
      echo '</div>';
@@ -84,7 +84,7 @@ echo "<h6>".category_description($category[0])."</h6>";
         echo '<div class ="oPost">';
        $query1->the_post();
        
-       echo '<h4>' . get_the_title()  . '</h4>';
+       echo '<a  style="font-size:1.2em"href='.get_the_permalink().'>' . get_the_title()  . '</a>';
        echo get_the_post_thumbnail(null,"thumbnail");
        echo '</div>';
    }

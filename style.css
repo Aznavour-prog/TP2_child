@@ -371,9 +371,9 @@ h1 p {
 .oGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[30];
+  -ms-grid-rows: (1fr);
       grid-template-rows: repeat(30, 1fr);
   height: auto;
   border: 2px solid black;
