@@ -21,7 +21,7 @@ do_action( 'astral_top_banner' );
             <?php
                 
                 echo "<h1>".category_description()."</h1>";
-                
+                /*Même si cette partie ci n'était pas requise pour le tp, nous voulions l'intégrer pour avoir un élément dans le site qui était géré avec l'API REST*/
                 // The 2nd Loop
                 $compte = 0;
                 while (have_posts()) {

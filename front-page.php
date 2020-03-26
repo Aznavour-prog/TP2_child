@@ -38,6 +38,7 @@ get_header();
   * wp_reset_postdata().
   */
  wp_reset_postdata();
+ 
  $args2 = array(
     "category_name"=>"evenement",
     "order"=>"ASC",
