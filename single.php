@@ -21,6 +21,8 @@ do_action( 'astral_top_banner' );
 */
 do_action( 'astral_breadcrumb_area' );
 ?>
+
+<!--Cette partie du code est utilisé pour répondre a la partie "description-evenement" du TP-->
 <div id="content">
     <section class="align-blog" id="blog">
         <div class="container">
@@ -28,7 +30,7 @@ do_action( 'astral_breadcrumb_area' );
                 <!-- left side -->
                 <div class="col-lg-8 single-left mt-lg-0 mt-4">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-						
+						/*Code utilisé pour démarquer les posts de type evenement des postes de type nouvelle*/
 						if(the_category_ID() == 2){
 							
 							echo '<h2>'.get_the_title().'</h2>';

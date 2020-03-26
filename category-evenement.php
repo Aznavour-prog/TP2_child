@@ -33,39 +33,19 @@ do_action( 'astral_top_banner' );
 			        get_template_part( 'template-parts/content', 'evenement' );
                     $oMois = (int)get_the_date("m");
                     $oJour = (int)get_the_date("j");
-
+                    $oCollone = $oMois%9;
                     
                     
-                    switch($oMois%9){
-                    case 0:echo "<div class='septembre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
+                    
+                    echo "<div class=mois".$oCollone." style='grid-area:".$oJour."/".($oCollone + 1)."/".($oJour+1)."/".($oCollone + 1).";' id=".get_the_ID().">";
                     echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
                     echo "<p>".get_the_title()."</p>";
-                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
+                    echo "<p>".$oJour."/".($oCollone + 1)."/".($oJour+1)."/".($oCollone + 1)."</p>";
                     echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
                     echo "</div>";
-                    break;
-
-                    case 1:
-
-                    echo "<div class='octobre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
-                    echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
-                    echo "<p>".get_the_title()."</p>";
-                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
-                    echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
-                    echo "</div>";
-                    break;
-                    
                     
 
-                    case 2:
-                    echo "<div class='novembre' style='grid-area:".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1).";' id=".get_the_ID().">";
-                    echo "<p>" . get_the_date("j") ." - ".get_the_date("m"). " - ".get_the_date("y") ."</p>";
-                    echo "<p>".get_the_title()."</p>";
-                    echo "<p>".$oJour."/".($oMois%9 + 1)."/".($oJour+1)."/".($oMois%9 + 1)."</p>";
-                    echo "<a href='http://localhost/vcd_veille/".get_the_id()."'>'lire plus'</a>";
-                    echo "</div>";
-                    break;
-                    }
+                   
                     
                     }
                            
