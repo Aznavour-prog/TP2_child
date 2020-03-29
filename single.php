@@ -31,7 +31,7 @@ do_action( 'astral_breadcrumb_area' );
                 <div class="col-lg-8 single-left mt-lg-0 mt-4">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 						/*Code utilisé pour démarquer les posts de type evenement des postes de type nouvelle*/
-						if(the_category_ID() == 2){
+						if(has_category('evenement')){
 							
 							echo '<h2>'.get_the_title().'</h2>';
 							echo the_excerpt();
